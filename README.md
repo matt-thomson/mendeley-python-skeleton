@@ -9,9 +9,9 @@ This is a simple Python application that uses the Mendeley API.
     
     [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/matt-thomson/mendeley-python-skeleton)
 
-3. Back at the developer portal, change your app's redirect URI to the Heroku URL with `/oauth` on the end.  For example, if your Heroku app is deployed at:
+3. Back at the developer portal, change your app's redirect URI to the Heroku HTTPS URL with `/oauth` on the end.  For example, if your Heroku app's name is:
  
-    `https://secure-citadel-6801.herokuapp.com`
+    `secure-citadel-6801`
 
     then your redirect URI should be:
     
