@@ -4,6 +4,7 @@ from urlparse import urlsplit, urlunsplit
 from flask import Flask, redirect, render_template, request, session
 from mendeley import Mendeley
 from mendeley.session import MendeleySession
+from werkzeug.contrib.fixers import ProxyFix
 
 
 client_id = os.environ['MENDELEY_CLIENT_ID']
@@ -12,6 +13,7 @@ client_secret = os.environ['MENDELEY_CLIENT_SECRET']
 app = Flask(__name__)
 app.debug = True
 app.secret_key = client_secret
+app.wsgi_app = ProxyFix(app.wsgi_app)
 
 
 @app.route('/')
