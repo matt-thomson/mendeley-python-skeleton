@@ -1,0 +1,11 @@
+.idea/
+.tox/
+*.egg
+*.egg-info
+*.pyc
+dist/
+build/
+MANIFEST
+test_config.yml
+junit-*.xml
+docs/_build/
